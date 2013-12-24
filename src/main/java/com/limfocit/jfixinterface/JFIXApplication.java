@@ -76,5 +76,8 @@ public class JFIXApplication extends MessageCracker implements Application {
 		// TODO Auto-generated method stub
 		
 	}
-
+	
+	public SessionID getSessionID() {
+		return SessionId;
+	}
 }
