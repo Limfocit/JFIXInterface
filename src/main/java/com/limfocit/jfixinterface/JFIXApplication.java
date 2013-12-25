@@ -6,10 +6,11 @@ import quickfix.FieldNotFound;
 import quickfix.IncorrectDataFormat;
 import quickfix.IncorrectTagValue;
 import quickfix.Message;
-import quickfix.MessageCracker;
+import quickfix.fix44.MessageCracker;
 import quickfix.RejectLogon;
 import quickfix.SessionID;
 import quickfix.UnsupportedMessageType;
+import quickfix.field.ClOrdID;
 import quickfix.field.MsgType;
 import quickfix.field.ResetSeqNumFlag;
 import quickfix.field.Username;
@@ -79,5 +80,11 @@ public class JFIXApplication extends MessageCracker implements Application {
 	
 	public SessionID getSessionID() {
 		return SessionId;
+	}
+	
+	public void onMessage( quickfix.fix44.NewOrderSingle message, SessionID sessionID )
+		      throws FieldNotFound, UnsupportedMessageType, IncorrectTagValue {
+		ClOrdID clOrdID = new ClOrdID();
+		message.get(clOrdID);
 	}
 }

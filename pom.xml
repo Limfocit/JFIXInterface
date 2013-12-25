@@ -6,14 +6,11 @@
     <dependencies>
     	<dependency>
     		<groupId>quickfixj</groupId>
-    		<artifactId>quickfixj-msg-fix44</artifactId>
+    		<artifactId>quickfixj-all</artifactId>
     		<version>1.5.3</version>
-    	</dependency>
-    	<dependency>
-    		<groupId>quickfixj</groupId>
-    		<artifactId>quickfixj-core</artifactId>
-    		<version>1.5.3</version>
-    	</dependency>
+    		<scope>system</scope>
+    		<systemPath>${project.basedir}/lib/quickfixj-all-1.5.3.jar</systemPath>
+    	</dependency>    	
     	<dependency>
     		<groupId>org.apache.mina</groupId>
     		<artifactId>mina-core</artifactId>
