@@ -3,20 +3,17 @@ package com.limfocit.jfixinterface.main;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-
 import com.limfocit.jfixinterface.JFIXApplication;
-
-import quickfix.Acceptor;
-import quickfix.Application;
 import quickfix.ConfigError;
 import quickfix.DefaultMessageFactory;
 import quickfix.FileLogFactory;
 import quickfix.FileStoreFactory;
+import quickfix.Initiator;
 import quickfix.LogFactory;
 import quickfix.MessageStoreFactory;
 import quickfix.SessionSettings;
-import quickfix.SocketAcceptor;
 import quickfix.MessageFactory;
+import quickfix.SocketInitiator;
 
 
 public class Main {
@@ -31,16 +28,17 @@ public class Main {
 		    MessageStoreFactory storeFactory = new FileStoreFactory(settings);
 		    LogFactory logFactory = new FileLogFactory(settings);
 		    MessageFactory messageFactory = new DefaultMessageFactory();
-		    Acceptor acceptor = new SocketAcceptor(application, storeFactory, settings, logFactory, messageFactory);
-		    acceptor.start();
-		    while (application.subscribeData()) {}
+		    Initiator connector = new SocketInitiator(application, storeFactory, settings, logFactory, messageFactory);
+		    connector.start();
+		    System.out.println("start");
+		    while (!application.subscribeData()) {}
 		    System.out.println("sub data");
 		    try {
 				System.in.read();
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
-		    acceptor.stop();
+		    connector.stop();
 		} catch (FileNotFoundException | ConfigError e) {
 			e.printStackTrace();
 		}

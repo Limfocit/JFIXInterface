@@ -17,6 +17,7 @@ import quickfix.fix42.MessageCracker;
 import quickfix.RejectLogon;
 import quickfix.SessionID;
 import quickfix.UnsupportedMessageType;
+import quickfix.field.AggregatedBook;
 import quickfix.field.MDEntryType;
 import quickfix.field.MDReqID;
 import quickfix.field.MDUpdateType;
@@ -49,11 +50,12 @@ public class JFIXApplication extends MessageCracker implements Application {
 				new SubscriptionRequestType(SubscriptionRequestType.SNAPSHOT_PLUS_UPDATES), 
 				new MarketDepth(1));
 		mes.set(new MDUpdateType(MDUpdateType.INCREMENTAL_REFRESH));
+		mes.set(new AggregatedBook(true));
 		MarketDataRequest.NoRelatedSym relatedSymbols = new MarketDataRequest.NoRelatedSym();
 		relatedSymbols.set(new Symbol("EUR/USD"));
 		mes.addGroup(relatedSymbols);
 		MarketDataRequest.NoMDEntryTypes entryTypes = new MarketDataRequest.NoMDEntryTypes();
-		entryTypes.set(new MDEntryType(MDEntryType.TRADE));
+		entryTypes.set(new MDEntryType(MDEntryType.BID));
 		mes.addGroup(entryTypes);
 		MySession.send(mes);
 		return true;
@@ -63,23 +65,27 @@ public class JFIXApplication extends MessageCracker implements Application {
 	public void fromAdmin(Message arg0, SessionID arg1) throws FieldNotFound,
 			IncorrectDataFormat, IncorrectTagValue, RejectLogon {
 		// TODO Auto-generated method stub		
+		System.out.println("fromAdmin");
 	}	
 
 	@Override
 	public void fromApp(final Message message, final SessionID sessionId) throws FieldNotFound,
 			IncorrectDataFormat, IncorrectTagValue, UnsupportedMessageType {
 		crack(message, sessionId);
+		System.out.println("fromApp");
 	}
 
 	@Override
 	public void onCreate(SessionID sessionID) {
-		 Session.lookupSession(sessionID).getLog().onEvent("Valid order types: ");
+		System.out.println("create " + sessionID.getSenderCompID());
+		Session.lookupSession(sessionID).getLog().onEvent("Valid order types: ");
 	}
 
 	@Override
 	public void onLogon(final SessionID sessionId) {
 		SessionId = sessionId;
 		MySession = Session.lookupSession(sessionId);
+		System.out.println("logon");
 	}
 
 	@Override
@@ -90,6 +96,7 @@ public class JFIXApplication extends MessageCracker implements Application {
 
 	@Override
 	public void toAdmin(final Message message, final SessionID sessionId) {
+		System.out.println("toAdmin");
 		try {
 			if (message.getHeader().getField(new MsgType()).getValue().equals(MsgType.LOGON)) {
 			    message.setField(new Username(Username));
@@ -104,7 +111,7 @@ public class JFIXApplication extends MessageCracker implements Application {
 	@Override
 	public void toApp(Message arg0, SessionID arg1) throws DoNotSend {
 		// TODO Auto-generated method stub
-		
+		System.out.println("toApp");
 	}
 	
 	public SessionID getSessionID() {

@@ -4,4 +4,10 @@
 .project
 .settings
 
+.idea/
+*.iml
+*.iws
+
 target
+src/main/resources/data/executor/*
+src/main/resources/log/*
