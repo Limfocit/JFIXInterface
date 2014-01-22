@@ -1,0 +1,162 @@
+2014.01.22 23:43:45 LOG5[11144:13664]: stunnel 4.56 on x86-pc-msvc-1500 platform
+2014.01.22 23:43:45 LOG5[11144:13664]: Compiled/running with OpenSSL 1.0.1e-fips 11 Feb 2013
+2014.01.22 23:43:45 LOG5[11144:13664]: Threading:WIN32 Sockets:SELECT,IPv6 SSL:ENGINE,OCSP,FIPS
+2014.01.22 23:43:45 LOG5[11144:13664]: Reading configuration from file stunnel.conf
+2014.01.22 23:43:45 LOG5[11144:13664]: FIPS mode is disabled
+2014.01.22 23:43:45 LOG5[11144:13664]: Configuration successful
+2014.01.22 23:46:29 LOG5[11144:13664]: Reading configuration from file stunnel.conf
+2014.01.22 23:46:29 LOG5[11144:13664]: FIPS mode is disabled
+2014.01.22 23:46:29 LOG5[11144:13664]: Configuration successful
+2014.01.22 23:46:29 LOG7[11144:13664]: Service [cxfix] (FD=500) bound to 0.0.0.0:9878
+2014.01.22 23:46:29 LOG7[11144:13664]: Signal pipe is empty
+2014.01.22 23:48:28 LOG7[11144:13664]: Dispatching signals from the signal pipe
+2014.01.22 23:48:28 LOG7[11144:13664]: Processing SIGNAL_RELOAD_CONFIG
+2014.01.22 23:48:28 LOG5[11144:13664]: Reading configuration from file stunnel.conf
+2014.01.22 23:48:28 LOG5[11144:13664]: FIPS mode is disabled
+2014.01.22 23:48:28 LOG7[11144:13664]: Compression not enabled
+2014.01.22 23:48:28 LOG7[11144:13664]: Snagged 64 random bytes from C:\Users\Limfocit/.rnd
+2014.01.22 23:48:28 LOG7[11144:13664]: Wrote 1024 new random bytes to C:\Users\Limfocit/.rnd
+2014.01.22 23:48:28 LOG7[11144:13664]: PRNG seeded successfully
+2014.01.22 23:48:28 LOG6[11144:13664]: Initializing service [cxfix]
+2014.01.22 23:48:28 LOG7[11144:13664]: SSL options set: 0x00000004
+2014.01.22 23:48:28 LOG5[11144:13664]: Configuration successful
+2014.01.22 23:48:28 LOG7[11144:13664]: Closing service [cxfix]
+2014.01.22 23:48:28 LOG7[11144:13664]: Service [cxfix] closed (FD=500)
+2014.01.22 23:48:28 LOG7[11144:13664]: Sessions cached before flush: 0
+2014.01.22 23:48:28 LOG7[11144:13664]: Sessions cached after flush: 0
+2014.01.22 23:48:28 LOG7[11144:13664]: Service [cxfix] closed
+2014.01.22 23:48:28 LOG7[11144:13664]: Service [cxfix] (FD=500) bound to 0.0.0.0:9878
+2014.01.22 23:48:28 LOG7[11144:13664]: Signal pipe is empty
+2014.01.22 23:48:50 LOG7[11144:13664]: Service [cxfix] accepted (FD=344) from 127.0.0.1:19792
+2014.01.22 23:48:50 LOG7[11144:13664]: Creating a new thread
+2014.01.22 23:48:50 LOG7[11144:13664]: New thread created
+2014.01.22 23:48:50 LOG7[11144:9932]: Service [cxfix] started
+2014.01.22 23:48:50 LOG5[11144:9932]: Service [cxfix] accepted connection from 127.0.0.1:19792
+2014.01.22 23:48:50 LOG6[11144:9932]: connect_blocking: connecting 208.89.233.31:443
+2014.01.22 23:48:50 LOG7[11144:9932]: connect_blocking: s_poll_wait 208.89.233.31:443: waiting 10 seconds
+2014.01.22 23:48:50 LOG5[11144:9932]: connect_blocking: connected 208.89.233.31:443
+2014.01.22 23:48:50 LOG5[11144:9932]: Service [cxfix] connected remote server from 127.0.0.1:19793
+2014.01.22 23:48:50 LOG7[11144:9932]: Remote socket (FD=760) initialized
+2014.01.22 23:48:50 LOG7[11144:9932]: SNI: sending servername: dret-fix-ssl.currenex.com
+2014.01.22 23:48:50 LOG7[11144:9932]: SSL state (connect): before/connect initialization
+2014.01.22 23:48:50 LOG7[11144:9932]: SSL state (connect): SSLv3 write client hello A
+2014.01.22 23:48:51 LOG7[11144:9932]: SSL state (connect): SSLv3 read server hello A
+2014.01.22 23:48:51 LOG7[11144:9932]: SSL state (connect): SSLv3 read server certificate A
+2014.01.22 23:48:51 LOG7[11144:9932]: SSL state (connect): SSLv3 read server done A
+2014.01.22 23:48:51 LOG7[11144:9932]: SSL state (connect): SSLv3 write client key exchange A
+2014.01.22 23:48:51 LOG7[11144:9932]: SSL state (connect): SSLv3 write change cipher spec A
+2014.01.22 23:48:51 LOG7[11144:9932]: SSL state (connect): SSLv3 write finished A
+2014.01.22 23:48:51 LOG7[11144:9932]: SSL state (connect): SSLv3 flush data
+2014.01.22 23:48:51 LOG7[11144:9932]: SSL state (connect): SSLv3 read finished A
+2014.01.22 23:48:51 LOG7[11144:9932]:    1 items in the session cache
+2014.01.22 23:48:51 LOG7[11144:9932]:    1 client connects (SSL_connect())
+2014.01.22 23:48:51 LOG7[11144:9932]:    1 client connects that finished
+2014.01.22 23:48:51 LOG7[11144:9932]:    0 client renegotiations requested
+2014.01.22 23:48:51 LOG7[11144:9932]:    0 server connects (SSL_accept())
+2014.01.22 23:48:51 LOG7[11144:9932]:    0 server connects that finished
+2014.01.22 23:48:51 LOG7[11144:9932]:    0 server renegotiations requested
+2014.01.22 23:48:51 LOG7[11144:9932]:    0 session cache hits
+2014.01.22 23:48:51 LOG7[11144:9932]:    0 external session cache hits
+2014.01.22 23:48:51 LOG7[11144:9932]:    0 session cache misses
+2014.01.22 23:48:51 LOG7[11144:9932]:    0 session cache timeouts
+2014.01.22 23:48:51 LOG7[11144:9932]: Peer certificate was cached (1822 bytes)
+2014.01.22 23:48:51 LOG6[11144:9932]: SSL connected: new session negotiated
+2014.01.22 23:48:51 LOG6[11144:9932]: Negotiated TLSv1/SSLv3 ciphersuite: RC4-MD5 (128-bit encryption)
+2014.01.22 23:48:51 LOG6[11144:9932]: Compression: null, expansion: null
+2014.01.22 23:48:51 LOG7[11144:9932]: SSL alert (read): warning: close notify
+2014.01.22 23:48:51 LOG6[11144:9932]: SSL closed (SSL_read)
+2014.01.22 23:48:51 LOG7[11144:9932]: Sent socket write shutdown
+2014.01.22 23:48:51 LOG6[11144:9932]: Read socket closed (readsocket)
+2014.01.22 23:48:51 LOG7[11144:9932]: Sending close_notify alert
+2014.01.22 23:48:51 LOG7[11144:9932]: SSL alert (write): warning: close notify
+2014.01.22 23:48:51 LOG6[11144:9932]: SSL_shutdown successfully sent close_notify alert
+2014.01.22 23:48:51 LOG5[11144:9932]: Connection closed: 204 byte(s) sent to SSL, 108 byte(s) sent to socket
+2014.01.22 23:48:51 LOG7[11144:9932]: Remote socket (FD=760) closed
+2014.01.22 23:48:51 LOG7[11144:9932]: Local socket (FD=344) closed
+2014.01.22 23:48:51 LOG7[11144:9932]: Service [cxfix] finished (0 left)
+2014.01.22 23:48:55 LOG7[11144:13664]: Service [cxfix] accepted (FD=352) from 127.0.0.1:19801
+2014.01.22 23:48:55 LOG7[11144:13664]: Creating a new thread
+2014.01.22 23:48:55 LOG7[11144:13664]: New thread created
+2014.01.22 23:48:55 LOG7[11144:8940]: Service [cxfix] started
+2014.01.22 23:48:55 LOG5[11144:8940]: Service [cxfix] accepted connection from 127.0.0.1:19801
+2014.01.22 23:48:55 LOG6[11144:8940]: connect_blocking: connecting 208.89.233.31:443
+2014.01.22 23:48:55 LOG7[11144:8940]: connect_blocking: s_poll_wait 208.89.233.31:443: waiting 10 seconds
+2014.01.22 23:48:55 LOG5[11144:8940]: connect_blocking: connected 208.89.233.31:443
+2014.01.22 23:48:55 LOG5[11144:8940]: Service [cxfix] connected remote server from 127.0.0.1:19802
+2014.01.22 23:48:55 LOG7[11144:8940]: Remote socket (FD=760) initialized
+2014.01.22 23:48:55 LOG7[11144:8940]: SNI: sending servername: dret-fix-ssl.currenex.com
+2014.01.22 23:48:55 LOG7[11144:8940]: SSL state (connect): before/connect initialization
+2014.01.22 23:48:55 LOG7[11144:8940]: SSL state (connect): SSLv3 write client hello A
+2014.01.22 23:49:05 LOG7[11144:8940]: SSL state (connect): SSLv3 read server hello A
+2014.01.22 23:49:05 LOG7[11144:8940]: SSL state (connect): SSLv3 read server certificate A
+2014.01.22 23:49:05 LOG7[11144:8940]: SSL state (connect): SSLv3 read server done A
+2014.01.22 23:49:05 LOG7[11144:8940]: SSL state (connect): SSLv3 write client key exchange A
+2014.01.22 23:49:05 LOG7[11144:8940]: SSL state (connect): SSLv3 write change cipher spec A
+2014.01.22 23:49:05 LOG7[11144:8940]: SSL state (connect): SSLv3 write finished A
+2014.01.22 23:49:05 LOG7[11144:8940]: SSL state (connect): SSLv3 flush data
+2014.01.22 23:49:05 LOG7[11144:8940]: SSL state (connect): SSLv3 read finished A
+2014.01.22 23:49:05 LOG7[11144:8940]:    2 items in the session cache
+2014.01.22 23:49:05 LOG7[11144:8940]:    2 client connects (SSL_connect())
+2014.01.22 23:49:05 LOG7[11144:8940]:    2 client connects that finished
+2014.01.22 23:49:05 LOG7[11144:8940]:    0 client renegotiations requested
+2014.01.22 23:49:05 LOG7[11144:8940]:    0 server connects (SSL_accept())
+2014.01.22 23:49:05 LOG7[11144:8940]:    0 server connects that finished
+2014.01.22 23:49:05 LOG7[11144:8940]:    0 server renegotiations requested
+2014.01.22 23:49:05 LOG7[11144:8940]:    0 session cache hits
+2014.01.22 23:49:05 LOG7[11144:8940]:    0 external session cache hits
+2014.01.22 23:49:05 LOG7[11144:8940]:    0 session cache misses
+2014.01.22 23:49:05 LOG7[11144:8940]:    0 session cache timeouts
+2014.01.22 23:49:05 LOG6[11144:8940]: SSL connected: new session negotiated
+2014.01.22 23:49:05 LOG6[11144:8940]: Negotiated TLSv1/SSLv3 ciphersuite: RC4-MD5 (128-bit encryption)
+2014.01.22 23:49:05 LOG6[11144:8940]: Compression: null, expansion: null
+2014.01.22 23:49:05 LOG7[11144:8940]: SSL alert (read): warning: close notify
+2014.01.22 23:49:05 LOG6[11144:8940]: SSL closed (SSL_read)
+2014.01.22 23:49:05 LOG7[11144:8940]: Sent socket write shutdown
+2014.01.22 23:49:05 LOG6[11144:8940]: Read socket closed (readsocket)
+2014.01.22 23:49:05 LOG7[11144:8940]: Sending close_notify alert
+2014.01.22 23:49:05 LOG7[11144:8940]: SSL alert (write): warning: close notify
+2014.01.22 23:49:05 LOG6[11144:8940]: SSL_shutdown successfully sent close_notify alert
+2014.01.22 23:49:05 LOG5[11144:8940]: Connection closed: 123 byte(s) sent to SSL, 108 byte(s) sent to socket
+2014.01.22 23:49:05 LOG7[11144:8940]: Remote socket (FD=760) closed
+2014.01.22 23:49:05 LOG7[11144:8940]: Local socket (FD=352) closed
+2014.01.22 23:49:05 LOG7[11144:8940]: Service [cxfix] finished (0 left)
+2014.01.22 23:49:06 LOG7[11144:13664]: Service [cxfix] accepted (FD=428) from 127.0.0.1:19806
+2014.01.22 23:49:06 LOG7[11144:13664]: Creating a new thread
+2014.01.22 23:49:06 LOG7[11144:13664]: New thread created
+2014.01.22 23:49:06 LOG7[11144:1136]: Service [cxfix] started
+2014.01.22 23:49:06 LOG5[11144:1136]: Service [cxfix] accepted connection from 127.0.0.1:19806
+2014.01.22 23:49:06 LOG6[11144:1136]: connect_blocking: connecting 208.89.233.31:443
+2014.01.22 23:49:06 LOG7[11144:1136]: connect_blocking: s_poll_wait 208.89.233.31:443: waiting 10 seconds
+2014.01.22 23:49:06 LOG5[11144:1136]: connect_blocking: connected 208.89.233.31:443
+2014.01.22 23:49:06 LOG5[11144:1136]: Service [cxfix] connected remote server from 127.0.0.1:19807
+2014.01.22 23:49:06 LOG7[11144:1136]: Remote socket (FD=760) initialized
+2014.01.22 23:49:06 LOG7[11144:1136]: SNI: sending servername: dret-fix-ssl.currenex.com
+2014.01.22 23:49:06 LOG7[11144:1136]: SSL state (connect): before/connect initialization
+2014.01.22 23:49:06 LOG7[11144:1136]: SSL state (connect): SSLv3 write client hello A
+2014.01.22 23:49:17 LOG7[11144:1136]: SSL state (connect): SSLv3 read server hello A
+2014.01.22 23:49:17 LOG7[11144:1136]: SSL state (connect): SSLv3 read server certificate A
+2014.01.22 23:49:17 LOG7[11144:1136]: SSL state (connect): SSLv3 read server done A
+2014.01.22 23:49:17 LOG7[11144:1136]: SSL state (connect): SSLv3 write client key exchange A
+2014.01.22 23:49:17 LOG7[11144:1136]: SSL state (connect): SSLv3 write change cipher spec A
+2014.01.22 23:49:17 LOG7[11144:1136]: SSL state (connect): SSLv3 write finished A
+2014.01.22 23:49:17 LOG7[11144:1136]: SSL state (connect): SSLv3 flush data
+2014.01.22 23:49:17 LOG7[11144:1136]: SSL state (connect): SSLv3 read finished A
+2014.01.22 23:49:17 LOG7[11144:1136]:    3 items in the session cache
+2014.01.22 23:49:17 LOG7[11144:1136]:    3 client connects (SSL_connect())
+2014.01.22 23:49:17 LOG7[11144:1136]:    3 client connects that finished
+2014.01.22 23:49:17 LOG7[11144:1136]:    0 client renegotiations requested
+2014.01.22 23:49:17 LOG7[11144:1136]:    0 server connects (SSL_accept())
+2014.01.22 23:49:17 LOG7[11144:1136]:    0 server connects that finished
+2014.01.22 23:49:17 LOG7[11144:1136]:    0 server renegotiations requested
+2014.01.22 23:49:17 LOG7[11144:1136]:    0 session cache hits
+2014.01.22 23:49:17 LOG7[11144:1136]:    0 external session cache hits
+2014.01.22 23:49:17 LOG7[11144:1136]:    0 session cache misses
+2014.01.22 23:49:17 LOG7[11144:1136]:    0 session cache timeouts
+2014.01.22 23:49:17 LOG6[11144:1136]: SSL connected: new session negotiated
+2014.01.22 23:49:17 LOG6[11144:1136]: Negotiated TLSv1/SSLv3 ciphersuite: RC4-MD5 (128-bit encryption)
+2014.01.22 23:49:17 LOG6[11144:1136]: Compression: null, expansion: null
+2014.01.22 23:49:17 LOG3[11144:1136]: readsocket: Connection reset by peer (WSAECONNRESET) (10054)
+2014.01.22 23:49:17 LOG5[11144:1136]: Connection reset: 0 byte(s) sent to SSL, 0 byte(s) sent to socket
+2014.01.22 23:49:17 LOG7[11144:1136]: Remote socket (FD=760) closed
+2014.01.22 23:49:17 LOG7[11144:1136]: Local socket (FD=428) closed
+2014.01.22 23:49:17 LOG7[11144:1136]: Service [cxfix] finished (0 left)
