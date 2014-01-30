@@ -61,6 +61,9 @@ public class JFIXApplication extends MessageCracker implements Application {
 		MarketDataRequest.NoMDEntryTypes entryTypes = new MarketDataRequest.NoMDEntryTypes();
 		entryTypes.set(new MDEntryType(MDEntryType.BID));
 		mes.addGroup(entryTypes);
+		entryTypes = new MarketDataRequest.NoMDEntryTypes();
+		entryTypes.set(new MDEntryType(MDEntryType.OFFER));
+		mes.addGroup(entryTypes);
 		MySession.send(mes);
 		return true;
 	}
