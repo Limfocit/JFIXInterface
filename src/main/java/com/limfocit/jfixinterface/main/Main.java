@@ -3,7 +3,9 @@ package com.limfocit.jfixinterface.main;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import com.limfocit.jfixinterface.JFIXApplication;
+
+import com.limfocit.jfixinterface.app.JFIXApplication;
+
 import quickfix.ConfigError;
 import quickfix.DefaultMessageFactory;
 import quickfix.FileLogFactory;
@@ -31,7 +33,7 @@ public class Main {
 		    Initiator connector = new SocketInitiator(application, storeFactory, settings, logFactory, messageFactory);
 		    connector.start();
 		    System.out.println("start");
-		    try { Thread.sleep(10000); } catch (InterruptedException e1) {	e1.printStackTrace(); }
+		    //try { Thread.sleep(10000); } catch (InterruptedException e1) {	e1.printStackTrace(); }
 		    System.out.println("end sleep");
 		    while (!application.subscribeData()) {}
 		    System.out.println("sub data");
